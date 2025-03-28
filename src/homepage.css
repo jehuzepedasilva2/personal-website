@@ -1,0 +1,16 @@
+:root {
+  --primary-font-color: #FFFFFF;
+  --font-size-1: 3rem;
+}
+
+.front {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-text {
+  color: var(--primary-font-color);
+  font-size: var(--font-size-1);
+}
