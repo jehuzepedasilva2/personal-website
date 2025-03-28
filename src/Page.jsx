@@ -33,7 +33,7 @@ function AboutMe() {
   return (
     <div className='about-page'>
       <div className='about-heading'>
-        About
+        <p>About</p>
       </div>
     </div>
   );

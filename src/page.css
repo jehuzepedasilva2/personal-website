@@ -96,7 +96,10 @@
   flex-direction: column;
 }
 
-.about-heading {
+.about-heading > p {
+  padding: 0;
+  margin: 0;
   font-size: var(--font-size-1);
+  font-weight: bold;
   color: var(--primary-font-color);
 }
