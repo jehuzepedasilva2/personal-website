@@ -1,0 +1,102 @@
+.section {
+  display: flex;
+  padding: 2.5rem;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.intro-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-text {
+  color: var(--primary-font-color);
+  font-size: var(--font-size-1);
+  text-align: center;
+}
+
+.intro-text > span.glitch-button-text {
+  font-weight: bold;
+  font-size: var(--font-size-1);
+  color: var(--other-font-color);
+}
+
+.intro-page button {
+  background: none;
+  border: 1px solid var(--other-font-color);
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+
+.glitch-button-text {
+  padding: 0;
+  margin: 0;
+  font-size: var(--font-size-2);
+  color: var(--other-font-color);
+  position: relative;
+}
+
+.glitch-button-text:hover {
+  opacity: 0.9;
+  text-shadow: 0px -5px #ec2225, 0px 5px #00c2cb, -5px 0px #ec2225, 5px 0px #00c2cb;
+}
+
+.glitch-button-text::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #e0ffff;
+  z-index: -1;
+}
+
+.glitch-button-text:hover::before {
+  animation: animate 100ms ease-in-out backwards;
+  z-index: 1;
+}
+
+@keyframes animate{
+  0%, 100%{
+    top: -7px;
+    left: 0;
+    opacity: 1;
+  }
+  20%{
+    top: 0;
+    left: -10px;
+    opacity: 0.7;
+  }
+  40%{
+    top: 7px;
+    left: 0;
+    opacity: 0.2;
+  }
+  60%{
+    top: 0;
+    left: 10px;
+    opacity: 0.3;
+  }
+  80%{
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+  }
+}
+
+/* ---- about page ----- */
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-heading {
+  font-size: var(--font-size-1);
+  color: var(--primary-font-color);
+}
