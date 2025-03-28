@@ -57,7 +57,7 @@ export default function Starfield(props) {
     const putPixel = (x, y, brightness) => {
       const [r, g, b] = starColor;
       c.fillStyle = `rgba(${r},${g},${b},${brightness})`;
-      c.fillRect(x, y, 1, 1);
+      c.fillRect(x, y, 1.5, 1.5);
     };
 
     const moveStars = (distance) => {

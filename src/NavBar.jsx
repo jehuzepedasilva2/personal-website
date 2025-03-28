@@ -15,7 +15,7 @@ function NavButton({ name, id, isSelected=false }) {
 
   return (
     <button
-    id={id}
+      id={id}
       className={`${isSelected ? 'selected' : ''}`}
       onClick={(e) => handleClick(e)}
     >
