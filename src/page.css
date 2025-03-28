@@ -259,3 +259,8 @@
   font-weight: bold;
   color: var(--other-font-color);
 }
+
+.contact {
+  font-size: var(--font-size-1);
+  color: var(--primary-font-color);
+}

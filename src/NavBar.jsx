@@ -1,40 +1,33 @@
 import './navbar.css';
 
-function NavButton({ name, id, isSelected=false }) {
-
-  const handleClick = (e) => {
-    // get old selected
-    const oldSelected = document.querySelector('.selected');
-    oldSelected.classList.remove('selected');
-    // process newly clicked
-    e.target.classList.add('selected');
-    const elementId = e.target.id.split('-')[0];
-    const element = document.getElementById(elementId);
-    element.scrollIntoView({ behavior: 'smooth' })
-  }
-
+function NavButton({ name, id, isActive, onClick }) {
   return (
     <button
       id={id}
-      className={`${isSelected ? 'selected' : ''}`}
-      onClick={(e) => handleClick(e)}
+      className={isActive ? 'selected' : ''}
+      onClick={() => onClick(id.split('-')[0])}
     >
       {name}
     </button>
   );
 }
 
-export default function NavBar() {
+export default function NavBar({ activeSection, setActiveSection }) {
+  const handleClick = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    element.scrollIntoView({ behavior: 'smooth' });
+    setActiveSection(sectionId);
+  };
 
   return (
     <div className="nav-bar">
       <div className="buttons">
-        <NavButton name='Home' id='intro-nav' isSelected={true} />
-        <NavButton name='About' id='about-nav' />
-        <NavButton name='Projects' id='projects-nav' />
-        <NavButton name='Contact' id='contact-nav' />
+        <NavButton name="Home" id="intro-nav" isActive={activeSection === 'intro'} onClick={handleClick} />
+        <NavButton name="About" id="about-nav" isActive={activeSection === 'about'} onClick={handleClick} />
+        <NavButton name="Projects" id="projects-nav" isActive={activeSection === 'projects'} onClick={handleClick} />
+        <NavButton name="Contact" id="contact-nav" isActive={activeSection === 'contact'} onClick={handleClick} />
       </div>
-      <div className='line'></div>
+      <div className="line"></div>
     </div>
   );
 }
