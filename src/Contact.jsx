@@ -9,13 +9,28 @@ import {
 } from "./svgs";
 
 function Footer() {
+
+  const handleGitClick = () => {
+    window.open(personalInfo.githubSchoolLink, '_blank');
+  }
+
+  const handleLinkedinClick = () => {
+    window.open(personalInfo.linkedInLink, '_blank');
+  }
+
   return (
     <div className="footer">
       <div className="footer-links">
-        <button className="footer-button">
+        <button 
+          className="footer-button"
+          onClick={handleGitClick}
+        >
           {githubLinksvg}
         </button>
-        <button className="footer-button">
+        <button 
+          className="footer-button"
+          onClick={handleLinkedinClick}
+        >
           {linkedinSvg}
         </button>
       </div>

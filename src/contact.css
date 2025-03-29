@@ -31,6 +31,12 @@
 .footer-button {
   border: none;
   background: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in;
+}
+
+.footer-button:hover {
+  transform: scale(1.1);
 }
 
 .footer svg {
