@@ -1,0 +1,12 @@
+.contact-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-page > p {
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-size-1);
+  color: var(--other-font-color);
+  font-weight: bold;
+}

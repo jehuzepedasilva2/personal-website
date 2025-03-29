@@ -4,6 +4,7 @@ import NavBar from './NavBar.jsx';
 import IntroPage from './IntroPage.jsx';
 import AboutMe from './AboutMe.jsx';
 import Projects from './Projects.jsx';
+import Contact from './Contact.jsx';
 
 export default function Page() {
   const [activeSection, setActiveSection] = useState('intro');
@@ -40,7 +41,7 @@ export default function Page() {
       <div id="intro" ref={refs.intro} className="section"><IntroPage /></div>
       <div id="about" ref={refs.about} className="section"><AboutMe /></div>
       <div id="projects" ref={refs.projects} className="section"><Projects /></div>
-      <div id="contact" ref={refs.contact} className="section">Contact</div>
+      <div id="contact" ref={refs.contact} className="section"><Contact /></div>
     </div>
   );
 }
