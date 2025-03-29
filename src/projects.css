@@ -90,6 +90,7 @@
 }
 
 .proj-desc {
+  font-size: var(--font-size-3);
   line-height: 2rem;
 }
 
