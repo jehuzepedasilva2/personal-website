@@ -28,6 +28,8 @@
   position: relative;  
 }
 
+/* change border on caropusel; */
+
 /* carousel  */
 .carousel-container {
   width: 100%;
@@ -47,6 +49,7 @@
   padding-bottom: 3rem;
 
   background-color: white;
+  /* background-color: var(--other-font-color); */
 
   border-radius: 0.5rem;
 }
