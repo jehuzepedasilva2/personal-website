@@ -89,6 +89,10 @@
   flex-direction: column;
 }
 
+.proj-desc {
+  line-height: 2rem;
+}
+
 .project-data p > a {
   text-decoration: none;
   color: var(--primary-font-color)

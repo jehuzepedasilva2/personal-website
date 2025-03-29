@@ -3,8 +3,7 @@ import { filledCircle, emptyCircle } from './svgs';
 import { projects } from './data';
 import React, { useRef, useState } from 'react';
 
-// carousel of all the projects;
-// ! Add functionaly to buttons for livelink and git
+// ! TODO: add buttons for next and previous to the bottom of the carousel
 
 function Carousel({ itemRefs, currentId, setCurrentId }) {
 
@@ -82,7 +81,7 @@ function ProjectData({ id }) {
   return (
     <div className='project-data'>
       <p className='proj-title'>{project.projName}</p>
-      <p>{project.description}</p>
+      <p className='proj-desc'>{project.description}</p>
       <div className="links">
         {project.projName !== 'DSA in JavaScript' && 
           <a 

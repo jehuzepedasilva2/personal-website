@@ -10,7 +10,11 @@ const personalInfo = {
   name: 'Jehu Zepeda-Silva', 
   title: 'Software Engineer', 
   statement: 'Creating innovative and scalable solutions through technology', 
-  about: "I am a recent graduate from UC Berkeley with a Bachelor's in Computer Science, where I cultivated a passion for problem-solving, innovation, and lifelong learning. Outside the world of coding and technology, fitness is an essential part of my routine, helping me stay focused and energized. I also love playing guitar. When I'm not working on personal projects or pursuing my professional goals, I spend quality time with my two dogs, Yarpi and Yukka. Yarpi is a charming Pug-Shih Tzu mix, while Yukka is a Pomeranian. I am driven by curiosity and the desire to learn, grow, and make a meaningful impact. Whether it's taking on challenging projects, exploring new technologies, or finding creative solutions, I embrace every opportunity to push boundaries and expand my horizons."
+  about: "I am a recent graduate from UC Berkeley with a Bachelor's in Computer Science, where I cultivated a passion for problem-solving, innovation, and lifelong learning. Outside the world of coding and technology, fitness is an essential part of my routine, helping me stay focused and energized. I also love playing guitar. When I'm not working on personal projects or pursuing my professional goals, I spend quality time with my two dogs, Yarpi and Yukka. Yarpi is a charming Pug-Shih Tzu mix, while Yukka is a Pomeranian. I am driven by curiosity and the desire to learn, grow, and make a meaningful impact. Whether it's taking on challenging projects, exploring new technologies, or finding creative solutions, I embrace every opportunity to push boundaries and expand my horizons.",
+  email: 'jehuzepeda@yahoo.com',
+  phone: '408-807-5334',
+  location: 'Los Gatos, California 95033',
+  contactMessage: "I'd love the opportunity to connect and discuss how our work and expertise might align to create something valuable together. Please don't hesitate to reach out if you believe there's potential for a mutually beneficial collaboration—I'd be excited to explore the possibilities"
 }
 
 const projects = [
