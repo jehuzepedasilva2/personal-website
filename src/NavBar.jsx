@@ -4,7 +4,8 @@ function NavButton({ name, id, isActive, onClick }) {
   return (
     <button
       id={id}
-      className={isActive ? 'selected' : ''}
+      className={`${isActive ? 'selected' : ''} glitch-button-text`}
+      data-text={name}
       onClick={() => onClick(id.split('-')[0])}
     >
       {name}
