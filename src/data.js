@@ -24,19 +24,19 @@ const projects = [
   },
   {
     id: 2,
-    projName: 'Battleship',
-    screenShotLink: battleship,
-    gitLink: 'https://github.com/jehuzepedasilva2/battleship', 
-    liveLink: 'https://jehuzepedasilva2.github.io/battleship/',
-    description: 'Test your strategy and precision with this interactive Battleship game! Built entirely with HTML, CSS, and JavaScript, this game offers a sleek and engaging experience where players can challenge themselves to sink all enemy ships on a classic grid-based battlefield.'
-  }, 
-  {
-    id: 3,
     projName: 'Todo List', 
     screenShotLink: todo,
     gitLink: 'https://github.com/jehuzepedasilva2/todo-list', 
     liveLink: 'https://jehuzepedasilva2.github.io/todo-list/', 
     description: 'This responsive Todo List application provides an intuitive and visually appealing interface for managing tasks efficiently. Featuring a dark and light mode!'
+  }, 
+  {
+    id: 3,
+    projName: 'Battleship',
+    screenShotLink: battleship,
+    gitLink: 'https://github.com/jehuzepedasilva2/battleship', 
+    liveLink: 'https://jehuzepedasilva2.github.io/battleship/',
+    description: 'Test your strategy and precision with this interactive Battleship game! Built entirely with HTML, CSS, and JavaScript, this game offers a sleek and engaging experience where players can challenge themselves to sink all enemy ships on a classic grid-based battlefield.'
   }, 
   {
     id: 4,
