@@ -13,6 +13,10 @@
   --font-size-3: 1.2rem;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 #root {
   width: 100vw;
   height: 100vh;
