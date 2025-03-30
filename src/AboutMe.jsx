@@ -2,17 +2,19 @@ import me from './assets/better.png';
 import { personalInfo } from './data';
 import './aboutme.css';
 import { 
+  cppSvg,
   cssSvg, 
   cSvg, 
   githubSvg, 
   htmlSvg, 
   javaScriptSvg, 
+  javaSvg, 
+  matplotlibSvg, 
+  numpySvg, 
   pythonSvg, 
   reactSvg, 
   sqlSvg 
 } from './svgs';
-
-// ! TODO: Add more languages?
 
 export default function AboutMe() {
   return (
@@ -28,28 +30,40 @@ export default function AboutMe() {
           </div>
           <div className='about-right'>
             <div className='technologies'>
-              <div className='tech1'>
+              <div className='java'>
+                {javaSvg}
+              </div>
+              <div className='py'>
                 {pythonSvg}
               </div>
-              <div className='tech2'>
+              <div className='js'>
                 {javaScriptSvg}
               </div>
-              <div className='tech3'>
+              <div className='html'>
                 {htmlSvg}
               </div>
-              <div className='tech4'>
+              <div className='c'>
                 {cSvg}
               </div>
-              <div className='tech5'>
+              <div className='cpp'>
+                {cppSvg}
+              </div>
+              <div className='git'>
                 {githubSvg}
               </div>
-              <div className='tech6'>
+              <div className='css'>
                 {cssSvg}
               </div>
-              <div className='tech8'>
+              <div className='sql'>
                 {sqlSvg}
               </div>
-              <div className='tech10'>
+              <div className='numpy'>
+                {numpySvg}
+              </div>
+              <div className='matplotlib'>
+                {matplotlibSvg}
+              </div>
+              <div className='jsx'>
                 {reactSvg}
               </div>
             </div>

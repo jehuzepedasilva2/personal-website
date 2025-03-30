@@ -65,74 +65,115 @@
 .technologies {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 2rem;
   justify-items: center;
+}
+
+.technologies > div {
+  box-sizing: border-box;
 }
 
 .technologies svg {
   height: 100%;
 }
 
-.tech1, 
-.tech2, 
-.tech3, 
-.tech4,
-.tech5, 
-.tech6, 
-.tech8, 
-.tech10 {
+.java,
+.py, 
+.js, 
+.html, 
+.c,
+.cpp,
+.git, 
+.css, 
+.sql,
+.numpy, 
+.matplotlib,
+.jsx {
   height:  100px;
   transition: transform 0.3s ease-in-out;
 }
 
-.tech1:hover, 
-.tech2:hover, 
-.tech3:hover, 
-.tech4:hover,
-.tech5:hover, 
-.tech6:hover, 
-.tech8:hover, 
-.tech10:hover {
+.java:hover,
+.py:hover, 
+.js:hover, 
+.html:hover, 
+.c:hover,
+.cpp:hover,
+.git:hover, 
+.css:hover, 
+.sql:hover,
+.numpy:hover,
+.matplotlib:hover,  
+.jsx:hover {
   transform: scale(1.1);
 } 
 
-.tech1 {
+.java {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.py {
   grid-column: 1;
   grid-row: 2;
 }
 
-.tech2 {
+.js {
   grid-column: 2;
   grid-row: 1;
 }
 
-.tech3 {
+.html {
   grid-column: 3;
   grid-row: 2;
 }
 
-.tech4 {
+.c {
   grid-column: 1;
   grid-row: 3;
 }
 
-.tech5 {
+.cpp {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.git {
   grid-column: 2;
   grid-row: 2;
 }
 
-.tech6 {
+.css {
   grid-column: 3;
   grid-row: 3;
 }
 
-.tech8 {
+.sql {
   grid-column: 2;
   grid-row: 3;
 }
 
-.tech10 {
+.numpy {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.matplotlib {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.jsx {
   grid-column: 2;
   grid-row: 4;
+}
+
+.technologies > *:is(.java, .py, .c, .cpp) {
+  margin-top: 2rem; 
+  /* justify-self: end; */
+}
+
+.technologies > *:is(.html, .css, .numpy, .matplotlib) {
+  margin-top: 2rem;
+  /* justify-self: start; */
 }
 

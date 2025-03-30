@@ -30,7 +30,7 @@ const projects = [
     screenShotLink: resumeBuilder,
     gitLink: 'https://github.com/jehuzepedasilva2/cv-app',
     liveLink: 'https://cv-app-dd8.pages.dev/', 
-    description: 'This interface allows you to customize your resume quickly and easily, with all changes appearing in real-time. Once you’re satisfied with your resume, you can proceed to download it! Created with React'
+    description: 'This app allows users to customize their resume directly on a preformatted layout. Fields are editable inline, making the resume creation process intuitive and efficient. Once complete, users can export their resume as a high-quality PDF with a single click.'
   },
   {
     id: 2,
