@@ -100,13 +100,22 @@
   transform: rotate(-45deg);
 }
 
-.prev-arrow:hover {
+.next-disabled, 
+.prev-disabled {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.prev-arrow:hover, 
+.prev-disabled:hover {
   transform: rotate(45deg) scale(1.2);
 }
 
-.next-arrow:hover {
+.next-arrow:hover, 
+.next-disabled:hover {
   transform: rotate(-45deg) scale(1.2);
 }
+
 
 .next-disabled {
   position: absolute;
