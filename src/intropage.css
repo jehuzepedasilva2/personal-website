@@ -128,3 +128,8 @@
     width: 80%;
   }
 }
+
+/*  for phones */
+@media (max-width: 480px) {
+  
+}

@@ -179,6 +179,7 @@
   .about-content-bottom {
     flex-direction: column;
   }
+
   .about-left > img {
     height: auto;
   }
@@ -189,5 +190,103 @@
 }
 
 @media (max-width: 768px) {
+  .about-left {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  .about-left > img {
+    position: absolute;
+    left: 0;
+  }
+
+  .about-left p::before {
+    content: '';
+    float: left;
+    width: 240px;
+    height: 140px;
+    border-radius: 50%;
+    shape-outside: circle();
+    margin: 2rem;
+    margin-right: 3rem;
+  }
+
+  .technologies {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 3rem;
+  }
+
+  .java {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .js {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .numpy {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .py {
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  .html {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .c {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .git {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .cpp {
+    grid-column: 4;
+    grid-row: 2;
+  }
+
+  .css {
+    grid-column: 1;
+    grid-row: 3;
+  } 
+
+  .sql {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .matplotlib {
+    grid-column: 3;
+    grid-row: 3;
+  }
+
+  .jsx {
+    grid-column: 4;
+    grid-row: 3;
+  }
+
+  .technologies > *:is(.java, .html, .css) {
+    margin-top: 1rem; 
+  }
   
+  .technologies > *:is(.py, .cpp, .jsx) {
+    margin-top: 1rem;
+  }
+
+  .technologies > *:is(.js, .numpy, .git, .c, .sql, .matplotlib) {
+    margin-top: 0rem;
+  }
+  
+
 }

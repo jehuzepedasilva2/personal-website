@@ -121,3 +121,14 @@
 
   border: 1px solid var(--other-font-color);
 }
+
+@media (max-width: 1024px) {
+  /* all good */
+}
+
+@media (max-width: 768px) {
+  .contact-message {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}

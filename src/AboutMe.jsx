@@ -39,7 +39,7 @@ export default function AboutMe() {
               <div className='js'>
                 {javaScriptSvg}
               </div>
-              <div className='html'>
+              <div className='git'>
                 {htmlSvg}
               </div>
               <div className='c'>
@@ -48,13 +48,13 @@ export default function AboutMe() {
               <div className='cpp'>
                 {cppSvg}
               </div>
-              <div className='git'>
+              <div className='html'>
                 {githubSvg}
               </div>
-              <div className='css'>
+              <div className='sql'>
                 {cssSvg}
               </div>
-              <div className='sql'>
+              <div className='css'>
                 {sqlSvg}
               </div>
               <div className='numpy'>
