@@ -48,6 +48,8 @@
   margin: 0;
   font-size: var(--font-size-2);
   color: var(--other-font-color);
+
+  transition: transform 0.3s ease;
 }
 
 .glitch-button-text {
@@ -75,6 +77,10 @@
 .glitch-button-text:hover::before {
   animation: animate 200ms ease-in-out backwards;
   z-index: 1;
+}
+
+.after-hover:hover {
+  transform: scale(1.05);
 }
 
 @keyframes animate{
