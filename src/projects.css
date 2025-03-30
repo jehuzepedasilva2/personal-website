@@ -60,6 +60,8 @@
   height: 20px;
   border-bottom: 3px solid black;
   cursor: pointer;
+
+  transition: transform 0.2s ease;
 }
 
 .prev-arrow {
@@ -74,6 +76,14 @@
   right: 1rem;
   border-right: 3px solid black;
   transform: rotate(-45deg);
+}
+
+.prev-arrow:hover {
+  transform: rotate(45deg) scale(1.2);
+}
+
+.next-arrow:hover {
+  transform: rotate(-45deg) scale(1.2);
 }
 
 .arrow:active {

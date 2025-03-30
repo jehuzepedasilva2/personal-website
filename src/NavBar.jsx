@@ -16,11 +16,7 @@ function NavButton({ name, id, isActive, onClick }) {
 export default function NavBar({ activeSection, setActiveSection }) {
   const handleClick = (sectionId) => {
     const element = document.getElementById(sectionId);
-    element.scrollIntoView({ 
-      behavior: 'smooth',
-      inline: 'end',
-      // block: 'start'
-    });
+    element.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
     setActiveSection(sectionId);
   };
 

@@ -8,8 +8,6 @@ import {
 import { projects } from './data';
 import React, { useRef, useState } from 'react';
 
-// ! TODO: add buttons for next and previous to the bottom of the carousel
-
 function Carousel({ itemRefs, currentId, setCurrentId }) {
 
   let dotStatus = projects.map(() => emptyCircle);
