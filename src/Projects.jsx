@@ -18,6 +18,14 @@ function Carousel({ itemRefs, currentId, setCurrentId }) {
   const containerRef = useRef(null);
   const [dots, setDots] = useState(dotStatus)
 
+  const updateCarousel = (current, next) => {
+    setCurrentId(next);
+    const newDots = [...dots];
+    newDots[current-1] = emptyCircle;
+    newDots[next-1] = filledCircle;
+    setDots(newDots);
+  }
+
   const handleScroll = () => {
     const container = containerRef.current;
     const containerRect = container.getBoundingClientRect();
@@ -34,13 +42,25 @@ function Carousel({ itemRefs, currentId, setCurrentId }) {
       }
     }
     if (closestId !== currentId) {
-      setCurrentId(closestId);
-      const newDots = [...dots];
-      newDots[currentId-1] = emptyCircle;
-      newDots[closestId-1] = filledCircle;
-      setDots(newDots);
+      updateCarousel(currentId, closestId);
     }
   };
+
+  const handleNextClick = () => {
+    const nextId = currentId + 1;
+    if (currentId < dots.length) {
+      const element = document.getElementById(`${nextId}`);
+      element.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+    }
+  }
+
+  const handlePrevClick = () => {
+    const nextId = currentId - 1;
+    if (nextId > 0) {
+      const element = document.getElementById(`${nextId}`);
+      element.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+    }
+  }
 
   return (
     <div 
@@ -50,7 +70,9 @@ function Carousel({ itemRefs, currentId, setCurrentId }) {
     >
       {projects.map(p => {
         return (
-          <div key={p.id} 
+          <div 
+            id ={p.id}
+            key={p.id+'-img'} 
             ref={itemRefs[p.id]}
             className='carousel-item' 
           >
@@ -69,6 +91,16 @@ function Carousel({ itemRefs, currentId, setCurrentId }) {
               {c}
             </div>
         )})}
+      </div>
+      <div 
+        className='arrow next-arrow'
+        onClick={handleNextClick}
+      >
+      </div>
+      <div 
+        className='arrow prev-arrow'
+        onClick={handlePrevClick}
+      >
       </div>
     </div>
   );
@@ -132,15 +164,6 @@ export default function Projects() {
           <ProjectData id={currentId} />
         </div>
       </div>
-    </div>
-  );
-}
-
-// one full page per project?
-function Project({ project }) {
-  return (
-    <div className='project-card'>
-      {project.id}
     </div>
   );
 }

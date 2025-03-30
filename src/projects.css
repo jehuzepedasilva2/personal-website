@@ -1,6 +1,7 @@
 .project-page {
   width: 100vw;
   height: 100vh;
+  box-sizing: border-box;
 }
 
 .project-header > p {
@@ -50,7 +51,35 @@
   /* background-color: var(--other-font-color); */
 
   border-radius: 0.5rem;
+
 }
+
+.arrow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-bottom: 3px solid black;
+  cursor: pointer;
+}
+
+.prev-arrow {
+  bottom: 1rem;
+  left: 1rem;
+  transform: rotate(45deg);
+  border-left: 3px solid black;
+}
+
+.next-arrow {
+  bottom: 1rem;
+  right: 1rem;
+  border-right: 3px solid black;
+  transform: rotate(-45deg);
+}
+
+.arrow:active {
+  border-color: var(--accent-color);
+}
+
 
 .carousel-item {
   flex: 1 0 100%;
@@ -144,7 +173,7 @@
   left: 45%;
 
   display: flex;
-  gap: 3px
+  gap: 3px;
 }
 
 .carousel-map svg {

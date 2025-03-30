@@ -14,7 +14,7 @@
 
 
 :root {
-  --primary-font-color: #d0c4c4;
+  --primary-font-color: #b7b3b3;
   --other-font-color: #35b8ff;
   --accent-color: rgb(129, 128, 128);
   --font-size-1: 3rem;
@@ -29,7 +29,6 @@ html {
 #root {
   width: 100vw;
   height: 100vh;
-  /* scroll-snap-points-y: repeat(300px); */
   scroll-snap-type: y mandatory;
   scroll-snap-type: mandatory;
   overflow: auto;
