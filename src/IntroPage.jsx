@@ -14,8 +14,14 @@ export default function IntroPage() {
     const oldSelected = document.querySelector('.selected');
     oldSelected.classList.remove('selected');
     document.getElementById('about-nav').classList.add('selected');
+
     const element = document.getElementById('about');
-    element.scrollIntoView({ behavior: 'smooth' })
+    const root = document.getElementById('root');
+    const y = element.offsetTop;
+    root.scrollTo({
+      top: y, 
+      behavior: 'smooth'
+    })
   };
 
   return (
