@@ -13,7 +13,6 @@
   --font-size-3: 1.2rem;
 } */
 
-
 :root {
   --primary-font-color: #FFFFFF;
   --other-font-color: #35b8ff;
@@ -26,6 +25,7 @@
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 #root {

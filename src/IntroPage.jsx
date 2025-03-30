@@ -28,7 +28,7 @@ export default function IntroPage() {
         onClick={handleClick}
         onMouseEnter={() => glitchText(h1Glitch)}
       >
-        <h1 className='glitch' ref={h1Glitch} data-text='More About Me ▽'>
+        <h1 className='glitch' ref={h1Glitch} onMouseEnter={() => glitchText(h1Glitch)} data-text='More About Me ▽'>
         {/* <h1 className='glitch-button-text' data-text='More About Me ▽'> */}
           More About Me ▽
         </h1>
