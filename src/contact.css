@@ -112,6 +112,7 @@
 }
 
 .back-up {
+  cursor: pointer;
   font-size: var(--font-size-1);
   color: var(--other-font-color);
   position: absolute;

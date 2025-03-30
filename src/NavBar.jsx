@@ -1,10 +1,17 @@
 import './navbar.css';
+import glitchText from './glitchText.js';
+import { useRef } from 'react';
 
 function NavButton({ name, id, isActive, onClick }) {
+
+  const buttonRef = useRef(null);
+
   return (
     <button
       id={id}
-      className={`${isActive ? 'selected' : ''} glitch-button-text`}
+      ref={buttonRef}
+      className={`${isActive ? 'selected' : ''} nav-btn glitch`}
+      onMouseEnter={() => glitchText(buttonRef)}
       data-text={name}
       onClick={() => onClick(id.split('-')[0])}
     >

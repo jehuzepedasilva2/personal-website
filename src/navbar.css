@@ -33,10 +33,10 @@
   transition: color 0.2s ease;
 }
 
-button.selected {
+.nav-btn.selected {
   color: var(--other-font-color);
 }
 
-button:hover {
-  color: var(--other-font-color);
+
+@media (max-width: 1024px) {
 }

@@ -175,3 +175,19 @@
   margin-top: 2rem;
 }
 
+@media (max-width: 1024px) {
+  .about-content-bottom {
+    flex-direction: column;
+  }
+  .about-left > img {
+    height: auto;
+  }
+
+  .technologies {
+    column-gap: 10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  
+}

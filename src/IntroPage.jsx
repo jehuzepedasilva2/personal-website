@@ -1,9 +1,14 @@
 import satelite from './assets/satelite2.png';
 import { personalInfo } from './data';
+import { useRef } from 'react';
 import './intropage.css';
+import glitchText from './glitchText.js';
 
 
 export default function IntroPage() {
+
+  const h1Glitch = useRef(null);
+  const pGlitch = useRef(null);
 
   const handleClick = () => {
     const oldSelected = document.querySelector('.selected');
@@ -11,18 +16,20 @@ export default function IntroPage() {
     document.getElementById('about-nav').classList.add('selected');
     const element = document.getElementById('about');
     element.scrollIntoView({ behavior: 'smooth' })
-  }
+  };
 
   return (
     <div className='intro-page'>
       <p className='intro-text'>
-        Hi, I'm <span className='glitch-button-text' data-text={personalInfo.name.split(' ')[0]}>{personalInfo.name.split(' ')[0]}</span>. <br></br>
+        Hi, I'm <span ref={pGlitch} className='glitch' onMouseEnter={() => glitchText(pGlitch)} data-text={personalInfo.name.split(' ')[0]}>{personalInfo.name.split(' ')[0]}</span>. <br></br>
         I am a {personalInfo.title}.
       </p>
       <button
         onClick={handleClick}
+        onMouseEnter={() => glitchText(h1Glitch)}
       >
-        <h1 className='glitch-button-text' data-text='More About Me ▽'>
+        <h1 className='glitch' ref={h1Glitch} data-text='More About Me ▽'>
+        {/* <h1 className='glitch-button-text' data-text='More About Me ▽'> */}
           More About Me ▽
         </h1>
       </button>

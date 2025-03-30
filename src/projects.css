@@ -258,3 +258,25 @@
   width: 1rem;
   height: 1rem;
 }
+
+@media (max-width: 1024px) {
+  .project-disp {
+    flex-direction: column;
+  }
+
+  .disp-left {
+    flex: 1;
+  }
+
+  .project-data {
+    align-items: center;
+  }
+
+  .proj-title {
+    width: 100%;
+  }
+
+  .proj-desc {
+    width: 80%;
+  }
+}

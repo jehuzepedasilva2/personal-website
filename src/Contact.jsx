@@ -7,8 +7,12 @@ import {
   githubLinksvg,
   linkedinSvg
 } from "./svgs";
+import glitchText from "./glitchText.js";
+import { useRef } from "react";
 
 function Footer() {
+
+  const upRef = useRef(null);
 
   const handleUpClick = () => {
     const element = document.getElementById('intro');
@@ -43,7 +47,9 @@ function Footer() {
         <p>{personalInfo.name.toUpperCase()} ©2025</p>
       </div>
       <div 
-        className="back-up glitch-button-text" 
+        className="back-up glitch"
+        ref={upRef}
+        onMouseEnter={() => glitchText(upRef)} 
         data-text='⇧'
         onClick={handleUpClick}
       >
@@ -54,6 +60,10 @@ function Footer() {
 }
 
 export default function Contact() {
+
+  const phoneRef = useRef(null);
+  const emailRef = useRef(null);
+
   return (
     <div className='contact-page'>
       <p>Contact</p>
@@ -68,11 +78,11 @@ export default function Contact() {
           </div>
           <div className="sub-c phone-num">
             {phoneSvg}
-            <a className="glitch-button-text" href="tel:4088075334" data-text={personalInfo.phone}>{personalInfo.phone}</a>
+            <a ref={phoneRef} className="glitch" href="tel:4088075334" onMouseEnter={() => glitchText(phoneRef)} data-text={personalInfo.phone}>{personalInfo.phone}</a>
           </div>
           <div className="sub-c email">
             {emailSvg}
-            <a className="glitch-button-text" href="mailto:jehuzepeda@yahoo.com" data-text={personalInfo.email}>{personalInfo.email}</a>
+            <a ref={emailRef} className="glitch" href="mailto:jehuzepeda@yahoo.com" onMouseEnter={() => glitchText(emailRef)} data-text={personalInfo.email}>{personalInfo.email}</a>
           </div>
         </div>
       </div>
