@@ -10,6 +10,11 @@ import {
 
 function Footer() {
 
+  const handleUpClick = () => {
+    const element = document.getElementById('intro');
+    element.scrollIntoView({behavior: 'smooth'});
+  }
+
   const handleGitClick = () => {
     window.open(personalInfo.githubSchoolLink, '_blank');
   }
@@ -36,6 +41,13 @@ function Footer() {
       </div>
       <div className="created">
         <p>{personalInfo.name.toUpperCase()} ©2025</p>
+      </div>
+      <div 
+        className="back-up glitch-button-text" 
+        data-text='⇧'
+        onClick={handleUpClick}
+      >
+        ⇧
       </div>
     </div>
   );

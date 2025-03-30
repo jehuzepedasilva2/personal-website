@@ -26,6 +26,8 @@
   margin-bottom: -3rem;
   z-index: 15;
 
+  position: relative;
+
 }
 
 .footer-button {
@@ -107,4 +109,14 @@
   margin: 0;
   font-size: 1rem;
   color: var(--primary-font-color);
+}
+
+.back-up {
+  font-size: var(--font-size-1);
+  color: var(--other-font-color);
+  position: absolute;
+  top: -3rem;
+  right: 48.5%;
+
+  border: 1px solid var(--other-font-color);
 }
