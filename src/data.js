@@ -10,10 +10,12 @@ const personalInfo = {
   name: 'Jehu Zepeda-Silva', 
   title: 'Software Engineer', 
   statement: 'Creating innovative and scalable solutions through technology', 
-  about: `Endlessly curious and driven by a passion for learning, I’m a software engineer who thrives at the intersection of creativity, logic, and technology. 
-          I have a deep love for JavaScript, React, and the ever-evolving world of web development. There’s always something new to explore, and that’s exactly what fuels me. 
-          Outside of coding, I am fascinated by the vastness of the universe and the potential for computer science to help us understand it. 
-          Whether it’s building on Earth or dreaming beyond it, I’m excited by how software can push boundaries. When I’m not coding or stargazing, you’ll find me reading, staying active, or making music on my guitar.`,
+  about: `Being a software engineer is like being an astronaut exploring the digital universe. 
+          Just as astronauts navigate the vastness of space with a mix of skill and curiosity, software engineers navigate the ever-evolving landscape of technology, constantly discovering new possibilities and building innovative solutions to challenges. 
+          I am a curious software engineer who is passionate about learning and skilled in JavaScript and React. 
+          I thrive at the intersection of creativity, logic, and technology, and I am always eager to explore the ever-evolving landscape of web development. 
+          I am fascinated by the universe and how computer science can deepen our understanding. 
+          When not coding or stargazing, I enjoy reading, staying active, and making music on my guitar.`,
   email: 'jehuzepeda@yahoo.com',
   phone: '408-807-5334',
   location: 'Los Gatos, California 95033',

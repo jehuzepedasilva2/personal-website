@@ -199,7 +199,7 @@
 
 .proj-desc {
   font-size: var(--font-size-3);
-  line-height: 2rem;
+  line-height: 1.9rem;
 }
 
 .project-data p > a {
