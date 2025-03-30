@@ -64,6 +64,28 @@
   transition: transform 0.2s ease;
 }
 
+.next-arrow::before {
+  content: '';
+  position: absolute;
+  top: 0; 
+  left: 50%;
+  transform: translateY(-15%) rotate(45deg);
+  width: 3px;
+  height: 27px;
+  background-color: black;
+}
+
+.prev-arrow::before {
+  content: '';
+  position: absolute;
+  top: 0; 
+  left: 35%;
+  transform: translateY(-15%) rotate(135deg);
+  width: 3px;
+  height: 27px;
+  background-color: black;
+}
+
 .prev-arrow {
   bottom: 1rem;
   left: 1rem;
@@ -85,11 +107,6 @@
 .next-arrow:hover {
   transform: rotate(-45deg) scale(1.2);
 }
-
-.arrow:active {
-  border-color: var(--accent-color);
-}
-
 
 .carousel-item {
   flex: 1 0 100%;
