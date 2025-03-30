@@ -307,14 +307,48 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .slide-down-new {
+    animation: none;
+  }
+  
+  .slide-up-prev {
+    animation: none;
+  }
+}
+
+
 @media (max-width: 850px) {
-  /* all good */
+
 }
 
 @media (max-width: 550px) {
 
   .project-disp {
     align-items: center;
+  }
+
+  .proj-desc {
+    display: none;
+  }
+
+  .carousel-container {
+    height: 350px;
+    width: 300px;
+  }
+
+  .carousel-map {
+    left: 30%;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  .project-disp, 
+  .disp-right {
+    align-items: center;
+    justify-content: center;
   }
 
   .proj-desc {

@@ -22,7 +22,7 @@ const personalInfo = {
   linkedInLink: 'https://www.linkedin.com/in/jehuzepedasilva',
   githubSchoolLink: 'https://github.com/jehuzepedasilva',
   githubPersonalLink: 'https://github.com/jehuzepedasilva2',
-  contactMessage: "I'd love the opportunity to connect and discuss how our work and expertise might align to create something valuable together. Please don't hesitate to reach out if you believe there's potential for a mutually beneficial collaboration—I'd be excited to explore the possibilities"
+  contactMessage: "I'd love the opportunity to connect and discuss how our work and expertise might align to create something valuable together. Please don't hesitate to reach out if you believe there's potential for a mutually beneficial collaboration, I'd be excited to explore the possibilities"
 }
 
 const projects = [
