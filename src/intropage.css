@@ -106,7 +106,7 @@
 }
 
 /* for tablets */
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
   .sat-container {
     bottom: 5%;
     left: -10%;
@@ -118,7 +118,7 @@
 }
 
 /* for small tablets */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .sat-container {
     bottom: 4%;
     left: -15%;
@@ -130,6 +130,6 @@
 }
 
 /*  for phones */
-@media (max-width: 480px) {
-  
+@media (max-width: 500px) {
+  /* all good */
 }

@@ -259,7 +259,7 @@
   height: 1rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
   .project-disp {
     flex-direction: column;
   }
@@ -281,6 +281,27 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   /* all good */
+}
+
+@media (max-width: 500px) {
+
+  .project-disp {
+    align-items: center;
+  }
+
+  .proj-desc {
+    display: none;
+  }
+
+  .carousel-container {
+    height: 350px;
+    width: 300px;
+  }
+
+  .carousel-map {
+    left: 30%;
+  }
+
 }

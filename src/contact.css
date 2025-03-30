@@ -122,13 +122,21 @@
   border: 1px solid var(--other-font-color);
 }
 
-@media (max-width: 1024px) {
-  /* all good */
-}
 
-@media (max-width: 768px) {
+@media (max-width: 1150px) {
   .contact-message {
     padding-left: 10rem;
     padding-right: 10rem;
+  }
+
+  .footer {
+  }
+}
+
+@media (max-width: 500px) {
+
+  .contact-message {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
