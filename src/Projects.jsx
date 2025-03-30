@@ -6,9 +6,13 @@ import {
   githubLinksvg 
 } from './svgs';
 import { projects } from './data';
-import React, { useRef, useState } from 'react';
+import React, { 
+  useRef, 
+  useState,
+  useEffect,
+} from 'react';
 
-function Carousel({ itemRefs, currentId, setCurrentId }) {
+function Carousel({ itemRefs, currentId, setCurrentId, setPreviousId }) {
 
   let dotStatus = projects.map(() => emptyCircle);
   dotStatus[0] = filledCircle;
@@ -18,6 +22,7 @@ function Carousel({ itemRefs, currentId, setCurrentId }) {
 
   const updateCarousel = (current, next) => {
     setCurrentId(next);
+    setPreviousId(current);
     const newDots = [...dots];
     newDots[current-1] = emptyCircle;
     newDots[next-1] = filledCircle;
@@ -96,7 +101,11 @@ function Carousel({ itemRefs, currentId, setCurrentId }) {
   );
 }
 
-function ProjectData({ id }) {
+function ProjectData({ id, previousId }) {
+
+  // keep a ref of the project description tag
+  const projectDataRef = useRef(null);
+
   // find the project
   let project = null;
   for (const p of projects) {
@@ -105,8 +114,26 @@ function ProjectData({ id }) {
       break;
     }
   }
+
+  useEffect(() => {
+    if (id > previousId) {
+      projectDataRef.current.classList.add('slide-down-new')
+      setTimeout(() => {
+        projectDataRef.current.classList.remove('slide-down-new')
+      }, 200);
+    } else {
+      projectDataRef.current.classList.add('slide-up-prev')
+      setTimeout(() => {
+        projectDataRef.current.classList.remove('slide-up-prev')
+      }, 200);
+    }
+  }, [id, previousId]);
+
+  console.log(previousId, id);
+
+
   return (
-    <div className='project-data'>
+    <div className='project-data' ref={projectDataRef}>
       <p className='proj-title' data-text={project.projName}>{project.projName}</p>
       <p className='proj-desc'>{project.description}</p>
       <div className="links">
@@ -139,6 +166,7 @@ export default function Projects() {
   }, {})).current;
 
   const [currentId, setCurrentId] = useState(1); // default project
+  const [previousId, setPreviousId] = useState(0);
 
   return (
     <div className='project-page'>
@@ -147,11 +175,11 @@ export default function Projects() {
       </div>
       <div className="project-disp">
         <div className='disp-left'>
-          <Carousel itemRefs={imageRefs} currentId={currentId} setCurrentId={setCurrentId}/>
+          <Carousel itemRefs={imageRefs} currentId={currentId} setCurrentId={setCurrentId} setPreviousId={setPreviousId}/>
         </div>
         <div className='disp-right'>
           {/* use the currentId to index into projects and display that projects info */}
-          <ProjectData id={currentId} />
+          <ProjectData id={currentId} previousId={previousId} />
         </div>
       </div>
     </div>

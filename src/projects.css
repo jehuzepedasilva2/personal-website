@@ -259,6 +259,32 @@
   height: 1rem;
 }
 
+.slide-down-new {
+  animation: slide-down-new 200ms ease;
+}
+
+.slide-up-prev {
+  animation: slide-up-prev 200ms ease;
+}
+
+@keyframes slide-down-new {
+  from {
+    transform: translateY(-800px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slide-up-prev {
+  from {
+    transform: translateY(800px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
 @media (max-width: 1150px) {
   .project-disp {
     flex-direction: column;
