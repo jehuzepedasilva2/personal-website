@@ -46,7 +46,6 @@
   padding-bottom: 3rem;
 
   background-color: white;
-  /* background-color: var(--other-font-color); */
 
   border-radius: 0.5rem;
 
@@ -212,13 +211,14 @@
   text-align: center;
   font-size: var(--font-size-2);
   font-weight: bold;
+
+  background-color: var(--other-font-color);
 }
 
 .links {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
-
 }
 
 .link:hover {

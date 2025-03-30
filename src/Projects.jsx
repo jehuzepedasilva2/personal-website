@@ -107,7 +107,7 @@ function ProjectData({ id }) {
   }
   return (
     <div className='project-data'>
-      <p className='proj-title'>{project.projName}</p>
+      <p className='proj-title' data-text={project.projName}>{project.projName}</p>
       <p className='proj-desc'>{project.description}</p>
       <div className="links">
         {project.projName !== 'DSA in JavaScript' && 
