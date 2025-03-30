@@ -15,8 +15,13 @@ function Footer() {
   const upRef = useRef(null);
 
   const handleUpClick = () => {
+    const root = document.getElementById('root');
     const element = document.getElementById('intro');
-    element.scrollIntoView({behavior: 'smooth'});
+    const y = element.getBoundingClientRect().top - window.scrollY;
+    root.scrollTo({
+      top: y,
+      behavior: "smooth",
+    })
   }
 
   const handleGitClick = () => {

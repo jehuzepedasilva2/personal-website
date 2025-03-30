@@ -53,7 +53,7 @@ function Carousel({ itemRefs, currentId, setCurrentId, setPreviousId }) {
     const nextId = currentId + 1;
     if (currentId < dots.length) {
       const element = document.getElementById(`${nextId}`);
-      element.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+      element.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest'});
     }
   }
 
@@ -61,7 +61,7 @@ function Carousel({ itemRefs, currentId, setCurrentId, setPreviousId }) {
     const nextId = currentId - 1;
     if (nextId > 0) {
       const element = document.getElementById(`${nextId}`);
-      element.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+      element.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
     }
   }
 
@@ -128,9 +128,6 @@ function ProjectData({ id, previousId }) {
       }, 200);
     }
   }, [id, previousId]);
-
-  console.log(previousId, id);
-
 
   return (
     <div className='project-data' ref={projectDataRef}>

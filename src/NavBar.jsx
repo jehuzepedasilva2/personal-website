@@ -21,9 +21,18 @@ function NavButton({ name, id, isActive, onClick }) {
 }
 
 export default function NavBar({ activeSection, setActiveSection }) {
+
   const handleClick = (sectionId) => {
+    const root = document.getElementById('root');
     const element = document.getElementById(sectionId);
-    element.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+  
+    const scrollOffset = element.offsetTop; // This gives you the distance of the element from the top of its offsetParent (#root)
+  
+    root.scrollTo({
+      top: scrollOffset,
+      behavior: 'smooth',
+    });
+  
     setActiveSection(sectionId);
   };
 
