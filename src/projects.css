@@ -108,6 +108,50 @@
   transform: rotate(-45deg) scale(1.2);
 }
 
+.next-disabled {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 20px;
+  height: 20px;
+  border-bottom: 3px solid var(--other-accent-color);
+  border-right: 3px solid var(--other-accent-color);
+  transform: rotate(-45deg);
+}
+
+.prev-disabled {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  width: 20px;
+  height: 20px;
+  border-bottom: 3px solid var(--other-accent-color);
+  border-left: 3px solid var(--other-accent-color);
+  transform: rotate(45deg);
+}
+
+.prev-disabled::before {
+  content: '';
+  position: absolute;
+  top: 0; 
+  left: 35%;
+  transform: translateY(-15%) rotate(135deg);
+  width: 3px;
+  height: 27px;
+  background-color: var(--other-accent-color);
+}
+
+.next-disabled::before {
+  content: '';
+  position: absolute;
+  top: 0; 
+  left: 50%;
+  transform: translateY(-15%) rotate(45deg);
+  width: 3px;
+  height: 27px;
+  background-color: var(--other-accent-color);
+}
+
 .carousel-item {
   flex: 1 0 100%;
   display: flex;

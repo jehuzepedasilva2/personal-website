@@ -90,16 +90,8 @@ function Carousel({ itemRefs, currentId, setCurrentId }) {
             </div>
         )})}
       </div>
-      <div 
-        className='arrow next-arrow'
-        onClick={handleNextClick}
-      >
-      </div>
-      <div 
-        className='arrow prev-arrow'
-        onClick={handlePrevClick}
-      >
-      </div>
+      {currentId < projects.length ? (<div className='arrow next-arrow' onClick={handleNextClick}></div>) : (<div className='next-disabled'></div>)}
+      {currentId > 1 ? (<div className='arrow prev-arrow' onClick={handlePrevClick}></div>) : (<div className='prev-disabled'></div>)}
     </div>
   );
 }

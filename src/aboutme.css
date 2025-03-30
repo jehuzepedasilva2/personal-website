@@ -169,11 +169,9 @@
 
 .technologies > *:is(.java, .py, .c, .cpp) {
   margin-top: 2rem; 
-  /* justify-self: end; */
 }
 
 .technologies > *:is(.html, .css, .numpy, .matplotlib) {
   margin-top: 2rem;
-  /* justify-self: start; */
 }
 
