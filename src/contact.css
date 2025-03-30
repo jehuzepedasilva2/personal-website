@@ -131,10 +131,41 @@
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 540px) {
 
   .contact-message {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .contact-message {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .contact-message > p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .contact-message {
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .contact-message > p {
+    font-size: 1rem;
+  }
+
+  .contact-info {
+    gap: 0rem;
   }
 }
