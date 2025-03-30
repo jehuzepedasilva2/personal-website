@@ -10,10 +10,10 @@ const personalInfo = {
   name: 'Jehu Zepeda-Silva', 
   title: 'Software Engineer', 
   statement: 'Creating innovative and scalable solutions through technology', 
-  about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+  about: `Endlessly curious and driven by a passion for learning, I’m a software engineer who thrives at the intersection of creativity, logic, and technology. 
+          I have a deep love for JavaScript, React, and the ever-evolving world of web development. There’s always something new to explore, and that’s exactly what fuels me. 
+          Outside of coding, I am fascinated by the vastness of the universe and the potential for computer science to help us understand it. 
+          Whether it’s building on Earth or dreaming beyond it, I’m excited by how software can push boundaries. When I’m not coding or stargazing, you’ll find me reading, staying active, or making music on my guitar.`,
   email: 'jehuzepeda@yahoo.com',
   phone: '408-807-5334',
   location: 'Los Gatos, California 95033',
