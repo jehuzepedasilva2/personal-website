@@ -5,6 +5,7 @@ import todo from './assets/todo.png';
 import etchASketch from './assets/etch-a-skecth.png';
 import algos from './assets/algos.png';
 import resumeBuilder from './assets/resume-builder.png';
+import clock from './assets/clock.png';
 
 const personalInfo = {
   name: 'Jehu Zepeda-Silva', 
@@ -44,6 +45,14 @@ const projects = [
   }, 
   {
     id: 3,
+    projName: 'Retro Clock', 
+    screenShotLink: clock,
+    gitLink: 'https://github.com/jehuzepedasilva2/watch-me', 
+    liveLink: 'https://ceabf4dc.watch-me.pages.dev/', 
+    description: "It's just a retro style clock.. Made with love (and CSS grid). Click around, enjoy the brightness, and pretend it's 1985."
+  },
+  {
+    id: 4,
     projName: 'Battleship',
     screenShotLink: battleship,
     gitLink: 'https://github.com/jehuzepedasilva2/battleship', 
@@ -51,7 +60,7 @@ const projects = [
     description: 'Test your strategy and precision with this interactive Battleship game! Built entirely with HTML, CSS, and JavaScript, this game offers a sleek and engaging experience where players can challenge themselves to sink all enemy ships on a classic grid-based battlefield.'
   }, 
   {
-    id: 4,
+    id: 5,
     projName: 'Tic-Tac-Toe', 
     screenShotLink: tictactoe,
     gitLink: 'https://github.com/jehuzepedasilva2/tic-tac-toe', 
@@ -59,7 +68,7 @@ const projects = [
     description: 'Challenge yourself or a friend to this timeless 2-player strategy game, now in a sleek and interactive web version. Built with a clean and responsive interface, this game delivers a smooth experience on desktop.'
   }, 
   {
-    id: 5,
+    id: 6,
     projName: 'Restaurant Page', 
     screenShotLink: aztecKitchen,
     gitLink: 'https://github.com/jehuzepedasilva2/restaurant-page', 
@@ -67,7 +76,7 @@ const projects = [
     description: 'Enter the delicious world of this fictitious restaurant. The Aztecan Kitchen!'
   }, 
   {
-    id: 6,
+    id: 7,
     projName: 'Etch-a-Sketch', 
     screenShotLink: etchASketch, 
     gitLink: 'https://github.com/jehuzepedasilva2/etch-a-sketch',
@@ -75,7 +84,7 @@ const projects = [
     description: 'A fun and interactive digital Etch-A-Sketch application built with HTML, CSS, and JavaScript. Users can draw on a customizable grid, adjust the grid size, and experiment with various drawing modes'
   }, 
   {
-    id: 7,
+    id: 8,
     projName: "DSA in JavaScript", 
     screenShotLink: algos, 
     gitLink: 'https://github.com/jehuzepedasilva2/data-structures-js',
