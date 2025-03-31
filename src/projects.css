@@ -52,10 +52,10 @@
 }
 
 .arrow {
-  position: absolute;
+  /* position: absolute; */
   width: 20px;
   height: 20px;
-  border-bottom: 3px solid var(--other-font-color);
+  border-bottom: 2px solid black;
   cursor: pointer;
 
   transition: transform 0.2s ease;
@@ -67,9 +67,9 @@
   top: 0; 
   left: 50%;
   transform: translateY(-15%) rotate(45deg);
-  width: 3px;
+  width: 2px;
   height: 27px;
-  background-color: var(--other-font-color);;
+  background-color: black;
 }
 
 .prev-arrow::before {
@@ -78,22 +78,22 @@
   top: 0; 
   left: 35%;
   transform: translateY(-15%) rotate(135deg);
-  width: 3px;
+  width: 2px;
   height: 27px;
-  background-color: var(--other-font-color);;
+  background-color: black;
 }
 
 .prev-arrow {
-  bottom: 1rem;
-  left: 1rem;
+  /* bottom: 1rem;
+  left: 1rem; */
   transform: rotate(45deg);
-  border-left: 3px solid var(--other-font-color);;
+  border-left: 2px solid black;
 }
 
 .next-arrow {
-  bottom: 1rem;
-  right: 1rem;
-  border-right: 3px solid var(--other-font-color);;
+  /* bottom: 1rem;
+  right: 1rem; */
+  border-right: 2px solid black;
   transform: rotate(-45deg);
 }
 
@@ -115,24 +115,24 @@
 
 
 .next-disabled {
-  position: absolute;
+  /* position: absolute;
   bottom: 1rem;
-  right: 1rem;
+  right: 1rem; */
   width: 20px;
   height: 20px;
-  border-bottom: 3px solid var(--other-accent-color);
-  border-right: 3px solid var(--other-accent-color);
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
   transform: rotate(-45deg);
 }
 
 .prev-disabled {
-  position: absolute;
+  /* position: absolute;
   bottom: 1rem;
-  left: 1rem;
+  left: 1rem; */
   width: 20px;
   height: 20px;
-  border-bottom: 3px solid var(--other-accent-color);
-  border-left: 3px solid var(--other-accent-color);
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
   transform: rotate(45deg);
 }
 
@@ -142,9 +142,9 @@
   top: 0; 
   left: 35%;
   transform: translateY(-15%) rotate(135deg);
-  width: 3px;
+  width: 2px;
   height: 27px;
-  background-color: var(--other-accent-color);
+  background-color: black;
 }
 
 .next-disabled::before {
@@ -153,9 +153,9 @@
   top: 0; 
   left: 50%;
   transform: translateY(-15%) rotate(45deg);
-  width: 3px;
+  width: 2px;
   height: 27px;
-  background-color: var(--other-accent-color);
+  background-color: black;
 }
 
 .carousel-item {
@@ -199,7 +199,7 @@
 
 .proj-desc {
   font-size: var(--font-size-3);
-  line-height: 1.9rem;
+  line-height: 1.8rem;
 }
 
 .project-data p > a {
@@ -243,11 +243,21 @@
   transition: transform 0.3s ease-in;
 }
 
+.carousel-map-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.8rem;
+  left: 40%;
+}
+
 .carousel-map {
   width: max-content;
-  position: absolute;
+  /* position: absolute;
   bottom: 1rem;
-  left: 45%;
+  left: 45%; */
+  padding-top: 0.2rem;
 
   display: flex;
   gap: 3px;
@@ -259,7 +269,7 @@
 }
 
 .SVGRepo_iconCarrier {
-  fill: var(--other-font-color);
+  fill: black;
 }
 
 
@@ -294,6 +304,15 @@
     flex-direction: column;
   }
 
+  .proj-title {
+    font-size: 1rem;
+  }
+
+  .link > svg {
+    width: 30px;
+    height: 30px;
+  }
+
   .disp-left {
     flex: 1;
   }
@@ -307,8 +326,9 @@
   }
 
   .proj-desc {
-    width: 80%;
+    display: none;
   }
+
 }
 
 @media (max-width: 1024px) {
@@ -332,17 +352,13 @@
     align-items: center;
   }
 
-  .proj-desc {
-    display: none;
-  }
-
   .carousel-container {
     height: 350px;
     width: 300px;
   }
 
-  .carousel-map {
-    left: 30%;
+  .carousel-map-container {
+    left: 23%;
   }
 
 }
@@ -364,8 +380,8 @@
     width: 300px;
   }
 
-  .carousel-map {
-    left: 30%;
+  .carousel-map-container {
+    left: 25%;
   }
 
 }

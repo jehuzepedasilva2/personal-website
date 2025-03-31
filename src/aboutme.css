@@ -27,12 +27,12 @@
   align-items: center;
   position: relative;
 
-  margin-left: 5rem;
+  margin-left: 2rem;
 }
 
 .about-left > img {
-  height: 40%;
-  width: 40%;
+  height: 30%;
+  width: 30%;
   transition: transform 0.3s ease-in-out;
   z-index: 10;
 }
@@ -59,7 +59,7 @@
 
 .about-left p {
   font-size: var(--font-size-3);
-  line-height: 1.9rem;
+  line-height: 1.8rem;
 }
 
 .technologies {
@@ -88,7 +88,7 @@
 .numpy, 
 .matplotlib,
 .jsx {
-  height:  100px;
+  height:  90px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -184,24 +184,13 @@
 
 
 @media (max-width: 1150px) {
-  .about-content-bottom {
-    flex-direction: column;
-  }
-
-  .about-left > img {
-    height: 150px;
-    width: 150px;
-  }
-
-  .technologies {
-    column-gap: 10rem;
-  }
-}
-
-@media (max-width: 850px) {
   .about-left {
     align-items: flex-start;
     flex-direction: row;
+  }
+
+  .about-content-bottom {
+    flex-direction: column;
   }
 
   .about-left > img {
@@ -218,6 +207,33 @@
     shape-outside: circle();
     margin: 3rem;
     margin-right: 3rem;
+  }
+
+  .about-left > img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .technologies {
+    column-gap: 5rem;
+  }
+}
+
+@media (max-width: 1150px) {
+
+  .java,
+  .py, 
+  .js, 
+  .html, 
+  .c,
+  .cpp,
+  .git, 
+  .css, 
+  .sql,
+  .numpy, 
+  .matplotlib,
+  .jsx {
+    height:  70px;
   }
 
   .technologies {

@@ -83,20 +83,22 @@ function Carousel({ itemRefs, currentId, setCurrentId, setPreviousId }) {
           </div>
         );
       })}
-      <div className='carousel-map'>
-        {dots.map((c, i) => {
-          return (
-            <div
-              id={`${i+1}-c`}
-              key={`${i+1}-circle`} 
-              className='circle-map'
-            >
-              {c}
-            </div>
-        )})}
+      <div className='carousel-map-container'>
+        {currentId > 1 ? (<div className='arrow prev-arrow' onClick={handlePrevClick}></div>) : (<div className='prev-disabled'></div>)}
+        <div className='carousel-map'>
+          {dots.map((c, i) => {
+            return (
+              <div
+                id={`${i+1}-c`}
+                key={`${i+1}-circle`}
+                className='circle-map'
+              >
+                {c}
+              </div>
+          )})}
+        </div>
+        {currentId < projects.length ? (<div className='arrow next-arrow' onClick={handleNextClick}></div>) : (<div className='next-disabled'></div>)}
       </div>
-      {currentId < projects.length ? (<div className='arrow next-arrow' onClick={handleNextClick}></div>) : (<div className='next-disabled'></div>)}
-      {currentId > 1 ? (<div className='arrow prev-arrow' onClick={handlePrevClick}></div>) : (<div className='prev-disabled'></div>)}
     </div>
   );
 }
