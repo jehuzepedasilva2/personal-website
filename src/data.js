@@ -48,7 +48,7 @@ const projects = [
     projName: 'Retro Clock', 
     screenShotLink: clock,
     gitLink: 'https://github.com/jehuzepedasilva2/watch-me', 
-    liveLink: 'https://ceabf4dc.watch-me.pages.dev/', 
+    liveLink: 'https://watch-me.pages.dev/', 
     description: "It's just a retro style clock.. Made with love (and CSS grid). Click around, enjoy the brightness, and pretend it's 1985."
   },
   {
