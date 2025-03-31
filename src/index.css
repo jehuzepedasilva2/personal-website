@@ -3,17 +3,17 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-:root {
+/* :root {
   --primary-font-color: #FFFFFF;
   --other-font-color: #fc8585;
   --accent-color: rgb(129, 128, 128);
   --other-accent-color: lightgray;
   --font-size-1: 3rem;
   --font-size-2: 1.5rem;
-  --font-size-3: 1.2rem;
-}
+  --font-size-3: 1.1rem;
+} */
 
-/* :root {
+:root {
   --primary-font-color: #FFFFFF;
   --other-font-color: #35b8ff;
   --accent-color: rgb(129, 128, 128);
@@ -21,7 +21,7 @@
   --font-size-1: 3rem;
   --font-size-2: 1.5rem;
   --font-size-3: 1.1rem;
-} */
+}
 
 html {
   overflow-x: hidden;
