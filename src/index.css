@@ -37,3 +37,13 @@ html {
 
   min-width: 400px;
 }
+
+@media (height < 650px) and (orientation: landscape) {
+  .nav-bar, 
+  #intro, 
+  #about, 
+  #projects,
+  #contact {
+    display: None
+  }
+}
