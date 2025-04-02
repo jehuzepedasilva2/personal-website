@@ -37,7 +37,7 @@ const projects = [
   },
   {
     id: 2,
-    projName: 'Todo List', 
+    projName: 'Task Manager', 
     screenShotLink: todo,
     gitLink: 'https://github.com/jehuzepedasilva2/todo-list', 
     liveLink: 'https://jehuzepedasilva2.github.io/todo-list/', 
