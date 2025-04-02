@@ -22,6 +22,7 @@ export default function IntroPage() {
       top: y, 
       behavior: 'smooth'
     })
+    document.title = 'About';
   };
 
   return (

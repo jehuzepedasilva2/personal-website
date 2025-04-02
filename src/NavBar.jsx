@@ -32,7 +32,7 @@ export default function NavBar({ activeSection, setActiveSection }) {
       top: scrollOffset,
       behavior: 'smooth',
     });
-  
+
     setActiveSection(sectionId);
   };
 
