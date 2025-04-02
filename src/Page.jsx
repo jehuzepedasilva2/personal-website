@@ -23,7 +23,7 @@ export default function Page() {
           if (entry.isIntersecting) {
             // set the page tab title to the current page
             let newTitle = entry.target.id[0].toUpperCase() + entry.target.id.slice(1);
-            document.title = newTitle === 'Intro' ? 'Homepage' : newTitle;
+            document.title = newTitle === 'Intro' ? 'Home' : newTitle;
             setActiveSection(entry.target.id);
           }
         });
