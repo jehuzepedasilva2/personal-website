@@ -2,10 +2,11 @@ import battleship from './assets/battleship.png';
 import tictactoe from './assets/tic-tac-toe.png';
 import aztecKitchen from './assets/aztecan-kitchen.png';
 import todo from './assets/todo.png';
-import etchASketch from './assets/etch-a-skecth.png';
-import algos from './assets/algos.png';
+// import etchASketch from './assets/etch-a-skecth.png';
+// import algos from './assets/algos.png';
 import resumeBuilder from './assets/resume-builder.png';
 import clock from './assets/clock.png';
+import miniMsgBoard from './assets/mini-msg-brd.png';
 
 const personalInfo = {
   name: 'Jehu Zepeda-Silva', 
@@ -44,7 +45,15 @@ const projects = [
     description: 'This responsive Todo List application provides an intuitive and visually appealing interface for managing tasks efficiently. Featuring a dark and light mode!'
   }, 
   {
-    id: 3,
+    id: 3, 
+    projName: 'Mini Messageboard', 
+    screenShotLink: miniMsgBoard, 
+    gitLink: 'https://github.com/jehuzepedasilva2/mini-message-board', 
+    liveLink: 'https://mini-message-board-production-b8ae.up.railway.app/', 
+    description: 'A lightweight full-stack application built with Node.js, Express, and EJS for server-side rendering. Feel free to leave me a message!'
+  },
+  {
+    id: 4,
     projName: 'Retro Clock', 
     screenShotLink: clock,
     gitLink: 'https://github.com/jehuzepedasilva2/watch-me', 
@@ -52,7 +61,7 @@ const projects = [
     description: "It's just a retro style clock.. Made with love (and CSS grid). Enjoy the brightness, and pretend it's 1985."
   },
   {
-    id: 4,
+    id: 5,
     projName: 'Battleship',
     screenShotLink: battleship,
     gitLink: 'https://github.com/jehuzepedasilva2/battleship', 
@@ -60,7 +69,7 @@ const projects = [
     description: 'Test your strategy and precision with this interactive Battleship game! Built entirely with HTML, CSS, and JavaScript, this game offers a sleek and engaging experience where players can challenge themselves to sink all enemy ships on a classic grid-based battlefield.'
   }, 
   {
-    id: 5,
+    id: 6,
     projName: 'Tic-Tac-Toe', 
     screenShotLink: tictactoe,
     gitLink: 'https://github.com/jehuzepedasilva2/tic-tac-toe', 
@@ -68,29 +77,29 @@ const projects = [
     description: 'Challenge yourself or a friend to this timeless 2-player strategy game, now in a sleek and interactive web version. Built with a clean and responsive interface, this game delivers a smooth experience on desktop.'
   }, 
   {
-    id: 6,
+    id: 7,
     projName: 'Restaurant Page', 
     screenShotLink: aztecKitchen,
     gitLink: 'https://github.com/jehuzepedasilva2/restaurant-page', 
     liveLink: 'https://jehuzepedasilva2.github.io/restaurant-page/', 
     description: 'Enter the delicious world of this fictitious restaurant. The Aztecan Kitchen!'
   }, 
-  {
-    id: 7,
-    projName: 'Etch-a-Sketch', 
-    screenShotLink: etchASketch, 
-    gitLink: 'https://github.com/jehuzepedasilva2/etch-a-sketch',
-    liveLink: 'https://jehuzepedasilva2.github.io/etch-a-sketch/',
-    description: 'A fun and interactive digital Etch-A-Sketch application built with HTML, CSS, and JavaScript. Users can draw on a customizable grid, adjust the grid size, and experiment with various drawing modes'
-  }, 
-  {
-    id: 8,
-    projName: "DSA in JavaScript", 
-    screenShotLink: algos, 
-    gitLink: 'https://github.com/jehuzepedasilva2/data-structures-js',
-    liveLink: null, 
-    description: 'Implementation of important algorithms and data structures. Done in JavaScript.'
-  }
+  // {
+  //   id: 8,
+  //   projName: 'Etch-a-Sketch', 
+  //   screenShotLink: etchASketch, 
+  //   gitLink: 'https://github.com/jehuzepedasilva2/etch-a-sketch',
+  //   liveLink: 'https://jehuzepedasilva2.github.io/etch-a-sketch/',
+  //   description: 'A fun and interactive digital Etch-A-Sketch application built with HTML, CSS, and JavaScript. Users can draw on a customizable grid, adjust the grid size, and experiment with various drawing modes'
+  // }, 
+  // {
+  //   id: 9,
+  //   projName: "DSA in JavaScript", 
+  //   screenShotLink: algos, 
+  //   gitLink: 'https://github.com/jehuzepedasilva2/data-structures-js',
+  //   liveLink: null, 
+  //   description: 'Implementation of important algorithms and data structures. Done in JavaScript.'
+  // }
 ]
 
 export {
