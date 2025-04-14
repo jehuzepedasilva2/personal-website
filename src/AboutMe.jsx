@@ -5,15 +5,16 @@ import {
   cppSvg,
   cssSvg, 
   cSvg, 
-  githubSvg, 
-  htmlSvg, 
+  // htmlSvg, 
   javaScriptSvg, 
   javaSvg, 
   matplotlibSvg, 
   numpySvg, 
   pythonSvg, 
   reactSvg, 
-  sqlSvg 
+  sqlSvg, 
+  nodeSvg, 
+  githubSvg
 } from './svgs';
 
 export default function AboutMe() {
@@ -40,7 +41,7 @@ export default function AboutMe() {
                 {javaScriptSvg}
               </div>
               <div className='git'>
-                {htmlSvg}
+                {nodeSvg}
               </div>
               <div className='c'>
                 {cSvg}
